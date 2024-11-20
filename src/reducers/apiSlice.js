@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     loading: false,
     error: null,
-    apiUrl: '',
+    apiUrl: 'https://anime.kirwako.com/api/avatar?name=&gender=',
 };
 
 const apiSlice = createSlice({

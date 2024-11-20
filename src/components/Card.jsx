@@ -1,14 +1,16 @@
+import { useSelector } from "react-redux";
 
 const Card = () => {
+    const api = useSelector(state => state.api.apiUrl)
     return (
         <>
             <div
-                className="relative drop-shadow-xl w-48 h-64 overflow-hidden rounded-xl bg-[rgb(251,82,251)] group hover:scale-110 transition-transform duration-300 ease-out"
+                className="relative drop-shadow-xl w-48 h-64 overflow-hidden rounded-xl bg-[rgb(0,0,0)] group hover:scale-110 transition-transform duration-300 ease-out"
             >
                 <div className="absolute inset-0 z-[1]">
                     <img
                         className="w-full h-full object-cover"
-                        src="https://anime.kirwako.com/api/avatar?name=your-custom-seed&gender=male"
+                        src={`${api}`}
                         alt="Avatar"
                     />
                 </div>
