@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import GenerateButton from "./GenerateButton"
 
 const HomeButtons = () => {
