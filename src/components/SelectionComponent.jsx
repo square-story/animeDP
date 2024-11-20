@@ -1,3 +1,4 @@
+import AnimeCategory from "./AnimeCategory/AnimeCategory";
 import GenderSelection from "./GenderSelection/GenderSelection";
 
 /* eslint-disable react/prop-types */
@@ -18,23 +19,7 @@ const SelectionComponent = ({ onClose }) => {
                     </div>
 
                     {/* Anime Category Selection */}
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium mb-1">
-                            Anime Category
-                        </label>
-                        <select
-                            className="w-full p-2 border border-gray-700 rounded-md bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-rose-500"
-                            defaultValue=""
-                        >
-                            <option value="" disabled>
-                                Select Category
-                            </option>
-                            <option value="action">Action</option>
-                            <option value="romance">Romance</option>
-                            <option value="comedy">Comedy</option>
-                            <option value="fantasy">Fantasy</option>
-                        </select>
-                    </div>
+                    <AnimeCategory />
 
                     {/* Submit and Close Buttons */}
                     <div className="flex justify-between space-x-2 mt-6">
