@@ -1,3 +1,5 @@
+import GenderSelection from "./GenderSelection/GenderSelection";
+
 /* eslint-disable react/prop-types */
 const SelectionComponent = ({ onClose }) => {
     return (
@@ -11,20 +13,8 @@ const SelectionComponent = ({ onClose }) => {
 
                 <form>
                     {/* Gender Selection */}
-                    <div className="mb-4">
-                        <label className="block text-sm font-medium mb-1">
-                            Gender
-                        </label>
-                        <select
-                            className="w-full p-2 border border-gray-700 rounded-md bg-black focus:outline-none focus:ring-2 focus:ring-violet-500"
-                            defaultValue=""
-                        >
-                            <option value="" disabled>
-                                Select Gender
-                            </option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                    <div className="flex flex-col justify-center items-center">
+                        <GenderSelection />
                     </div>
 
                     {/* Anime Category Selection */}
