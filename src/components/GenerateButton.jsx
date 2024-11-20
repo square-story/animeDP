@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import SelectionComponent from "./SelectionComponent";
 
@@ -6,7 +5,6 @@ const GenerateButton = () => {
     const [showSelection, setShowSelection] = useState(false);
     const handleGenerateClick = () => {
         setShowSelection(true);
-
     };
 
     const handleCloseSelection = () => {
