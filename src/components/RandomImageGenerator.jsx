@@ -24,9 +24,6 @@ const RandomImageGenerator = () => {
         const randomGender = Math.random() > 0.5 ? 'male' : 'female';
         const randomAnime = animeList[Math.floor(Math.random() * animeList.length)].value;
 
-        console.log(`name:${randomName} gender:${randomGender} anime:${randomAnime}`);
-
-
         dispatch(fetchImage({ name: randomName, gender: randomGender, animeName: randomAnime }))
     }
 
